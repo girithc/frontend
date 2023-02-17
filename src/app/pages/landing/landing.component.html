@@ -10,24 +10,24 @@
             <div class="align-items-center surface-0 flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2" style="top:120px;  margin-left:10%; ">
                 <ul class="list-none p-0 m-0 flex lg:align-items-center select-none flex-column lg:flex-row cursor-pointer">
                     <li>
-                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/auth">
+                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/login">
                            <span class="text-2xl">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/auth">
+                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/login">
                             <span class="text-2xl">Apply</span>
                         </a>
                     </li>
                     <li>
-                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/auth">
+                        <a class="flex m-0 md:ml-5 px-0 py-3 text-900 font-medium line-height-3" routerLink="/login">
                             <span class="text-2xl">Login</span>
                         </a>
                     </li>
                 </ul>
                 <div class="flex justify-content-between lg:block border-top-1 lg:border-top-none surface-border py-3 lg:py-0 mt-3 lg:mt-0">
-                    <button pButton pRipple label="Login" class="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500 text-xl" ></button>
-                    <button pButton pRipple type="button" label="Register" class="p-button-outlined p-button-rounded text-xl ml-5 font-light line-height-2" ></button>
+                    <a routerLink="/login"><button pButton pRipple label="Login" class="p-button-text p-button-rounded border-none font-light line-height-2 text-blue-500 text-xl" ></button></a>
+                    <a routerLink="/login"><button pButton pRipple type="button" label="Register" class="p-button-outlined p-button-rounded text-xl ml-5 font-light line-height-2" routerLink="/login"></button></a>
                     
                 </div>
             </div>
