@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './pages/landing/landing.component';
-import { LoginComponent } from './pages/auth/login/login.component';
-import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   { 
@@ -10,12 +8,12 @@ const routes: Routes = [
     component: LandingComponent,
   },
   { 
-    path: 'login', 
-    component: LoginComponent
+    path: 'auth', 
+    loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule) 
   },
   { 
     path: 'home', 
-    component: HomeComponent
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule) 
   },
 ];
 
