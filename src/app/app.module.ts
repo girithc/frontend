@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { DividerModule } from 'primeng/divider';
 import { ChartModule } from 'primeng/chart';
 import { PanelModule } from 'primeng/panel';
 import { ButtonModule } from 'primeng/button';
+import { HomeModule } from './home/home.module';
 
 
 
@@ -19,13 +21,15 @@ import { ButtonModule } from 'primeng/button';
     LandingComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     DividerModule,
     StyleClassModule,
     ChartModule,
     PanelModule,
-    ButtonModule
+    ButtonModule,
+    RouterModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

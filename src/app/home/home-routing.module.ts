@@ -4,7 +4,14 @@ import { HomeComponent } from './home.component';
 
 @NgModule({
     imports: [RouterModule.forChild([
-        { path: '', component: HomeComponent },
+        { 
+            path: '', 
+            component: HomeComponent 
+        },
+        { 
+            path: 'screening', 
+            loadChildren: () => import('./components/screening/screening.module').then(m => m.ScreeningModule) 
+        }
     ])],
     exports: [RouterModule]
 })

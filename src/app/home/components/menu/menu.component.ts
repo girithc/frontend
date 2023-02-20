@@ -16,29 +16,28 @@ export class MenuComponent implements OnInit {
           {
               label: 'Overview',
               items: [
-                  { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['/'] }
+                  { label: 'Dashboard', icon: 'pi pi-fw pi-home', routerLink: ['screening'] }
               ]
           },
           {
               label: 'My Colleges',
               items: [
-                  { label: 'Form Layout', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
-                  { label: 'Input', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
-                  { label: 'Float Label', icon: 'pi pi-fw pi-bookmark', routerLink: ['/uikit/floatlabel'] },
+                  { label: 'Select Colleges', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
+                  { label: 'Saved Colleges', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
               ]
           },
           {
               label: 'Pre-Application',
               items: [
-                  { label: 'Free Blocks', icon: 'pi pi-fw pi-eye', routerLink: ['/blocks'], badge: 'NEW' },
-                  { label: 'All Blocks', icon: 'pi pi-fw pi-globe', url: ['https://www.primefaces.org/primeblocks-ng'], target: '_blank' },
+                  { label: 'Personal Information', icon: 'pi pi-fw pi-eye', routerLink: ['/blocks'], badge: 'NEW' },
+                  { label: 'Education ', icon: 'pi pi-fw pi-globe', url: ['https://www.primefaces.org/primeblocks-ng'], target: '_blank' },
               ]
           },
           {
               label: 'Application',
               items: [
-                  { label: 'PrimeIcons', icon: 'pi pi-fw pi-prime', routerLink: ['/utilities/icons'] },
-                  { label: 'PrimeFlex', icon: 'pi pi-fw pi-desktop', url: ['https://www.primefaces.org/primeflex/'], target: '_blank' },
+                  { label: 'College Application', icon: 'pi pi-fw pi-prime', routerLink: ['/utilities/icons'] },
+                  { label: 'Pay', icon: 'pi pi-fw pi-bitcoin', url: ['https://www.primefaces.org/primeflex/'], target: '_blank' },
               ]
           },
           {
@@ -46,7 +45,7 @@ export class MenuComponent implements OnInit {
               icon: 'pi pi-fw pi-briefcase',
               items: [
                   {
-                      label: 'Landing',
+                      label: 'Profile',
                       icon: 'pi pi-fw pi-globe',
                       routerLink: ['/landing']
                   },
