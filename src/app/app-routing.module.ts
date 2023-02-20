@@ -16,7 +16,7 @@ const routes: Routes = [
     path: 'home', 
     component: HomeComponent,
     children: [
-      {path: 'screening', loadChildren: () => import('./home/components/screening/screening.module').then(m => m.ScreeningModule)}
+      {path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule)}
     ] 
   },
 ];

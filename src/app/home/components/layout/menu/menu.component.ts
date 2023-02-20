@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HomeService } from '../../service/home.service';
+import { HomeService } from '../../../service/home.service';
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -22,7 +22,7 @@ export class MenuComponent implements OnInit {
           {
               label: 'My Colleges',
               items: [
-                  { label: 'Select Colleges', icon: 'pi pi-fw pi-id-card', routerLink: ['/uikit/formlayout'] },
+                  { label: 'Select Colleges', icon: 'pi pi-fw pi-id-card', routerLink: ['screening/one'] },
                   { label: 'Saved Colleges', icon: 'pi pi-fw pi-check-square', routerLink: ['/uikit/input'] },
               ]
           },

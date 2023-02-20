@@ -1,5 +1,5 @@
 import { Component, ElementRef } from '@angular/core';
-import { HomeService } from '../../service/home.service';
+import { HomeService } from '../../../service/home.service';
 
 @Component({
   selector: 'app-sidebar',

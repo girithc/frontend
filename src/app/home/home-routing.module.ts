@@ -11,6 +11,10 @@ import { HomeComponent } from './home.component';
         { 
             path: 'screening', 
             loadChildren: () => import('./components/screening/screening.module').then(m => m.ScreeningModule) 
+        },
+        { 
+            path: 'select-colleges', 
+            loadChildren: () => import('./components/screening/screening.module').then(m => m.ScreeningModule) 
         }
     ])],
     exports: [RouterModule]

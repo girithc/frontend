@@ -2,8 +2,8 @@ import { Component, OnDestroy, Renderer2, ViewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { HomeService } from './service/home.service';
 import { filter, Subscription } from 'rxjs';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { TopbarComponent } from './components/topbar/topbar.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
+import { TopbarComponent } from './components/layout/topbar/topbar.component';
 
 
 @Component({
