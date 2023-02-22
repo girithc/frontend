@@ -24,7 +24,8 @@ export class ScreeningComponent {
     
     cars:Car[];
 
-    selectedCar: Car;
+    selectedCar: Car = 
+    {name: 'Rome', code: 'RM'};
 
   
     constructor() 
