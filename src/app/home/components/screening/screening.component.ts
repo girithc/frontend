@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { MenuItem } from "primeng/api";
+import { SelectItem } from "primeng/api";
+import { SelectItemGroup } from "primeng/api";
+import { FilterService } from "primeng/api";
 
 interface Car {
-  id?: string;
   name?: string;
-  description?: string;
-  price?: number;
+  code?: string;
 }
 
 @Component({
@@ -15,30 +18,25 @@ interface Car {
 
 
 export class ScreeningComponent {
-  cars: Car[] = [];
-  
-  constructor() { }
 
-  ngOnInit() {
-      this.cars = [
-          {
-              id: '1',
-              name: 'Bugatti',
-              description: 'Racing car',
-              price: 800,
-          },
-          {
-              id: '2',
-              name: 'Ferrari',
-              description: 'The Prancing Horse',
-              price: 1500,
-          },
-          {
-              id: '3',
-              name: 'Porsche',
-              description: 'Full spectrum',
-              price: 10000,
-          },
-      ];
-  }
+
+
+    
+    cars:Car[];
+
+    selectedCar: Car;
+
+  
+    constructor() 
+    {
+        this.cars = [
+            {name: 'New York', code: 'NY'},
+            {name: 'Rome', code: 'RM'},
+            {name: 'London', code: 'LDN'},
+            {name: 'Istanbul', code: 'IST'},
+            {name: 'Paris', code: 'PRS'}
+          ];
+    }
+
+
 }

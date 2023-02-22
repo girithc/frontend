@@ -6,7 +6,7 @@ import { ScreeningComponent } from './screening.component';
 
 const routes: Routes = [
     {path: '', component: ScreeningComponent},
-    {path: 'screen-one', component: ScreenOneComponent}
+    {path: 'one', component: ScreenOneComponent}
 ]
 
 @NgModule({

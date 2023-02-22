@@ -29,8 +29,8 @@ export class MenuComponent implements OnInit {
           {
               label: 'Pre-Application',
               items: [
-                  { label: 'Personal Information', icon: 'pi pi-fw pi-eye', routerLink: ['/blocks'], badge: 'NEW' },
-                  { label: 'Education ', icon: 'pi pi-fw pi-globe', url: ['https://www.primefaces.org/primeblocks-ng'], target: '_blank' },
+                  { label: 'Personal Information', icon: 'pi pi-fw pi-eye', routerLink: ['screen-one'], badge: 'NEW' },
+                  { label: 'Education ', icon: 'pi pi-fw pi-globe', url: ['screen-two'], target: '_blank' },
               ]
           },
           {
