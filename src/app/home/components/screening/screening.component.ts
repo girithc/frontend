@@ -18,14 +18,10 @@ interface Car {
 
 
 export class ScreeningComponent {
-
-
-
-    
+  
     cars:Car[];
 
-    selectedCar: Car = 
-    {name: 'Rome', code: 'RM'};
+    selectedCar: Car;
 
   
     constructor() 
