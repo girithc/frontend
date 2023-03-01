@@ -17,3 +17,25 @@ div.container4 h1 {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%) }
+
+.btn-nav:hover {
+  color: rgb(205, 71, 205);
+}
+
+.btn-nav:hover {
+  color: white;
+  background-color: grey;
+}
+
+.btn-center:hover{
+  border-style: solid;
+  background-color: white;
+  color: rgb(205, 71, 205);
+}
+
+.btn-center{
+  border-style: solid;
+  border-color: grey;
+  color: black;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), radial-gradient(77.36% 256.97% at 77.36% 57.52%, #EFE1AF 0%, #d882e7 100%, );;
+}
