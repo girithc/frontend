@@ -6,6 +6,7 @@ import { SidebarComponent } from './components/layout/sidebar/sidebar.component'
 import { TopbarComponent } from './components/layout/topbar/topbar.component';
 
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -120,5 +121,7 @@ export class HomeComponent implements OnDestroy {
           this.menuOutsideClickListener();
       }
   }
+
+  
 }
 
